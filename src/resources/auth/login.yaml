@@ -1,0 +1,57 @@
+post:
+  summary: Authentication
+  operationId: authLogin
+  description: User login
+  tags:
+    - authentication
+  requestBody:
+    content:
+      application/json:
+        schema:
+          type: object
+          required:
+            - username
+            - password
+            - remember
+            - captcha
+          properties:
+            username:
+              type: string
+              example: your_username
+            password:
+              type: string
+              example: your_password
+            remember:
+              type: string
+              example: yes
+            captcha:
+              type: string
+              example: api
+            useragent:
+              type: string
+              example: TraderBot/dsadadsa
+  responses:
+    '200':
+      description:
+      content:
+        application/json:
+          schema:
+            type: object
+            properties:
+              status:
+                type: string
+                example: success
+              key:
+                type: string
+                example: db2055f743c1ac8c30d23278a496283b1e2dd46f
+              device:
+                type: string
+                example: AlRyansW
+    '429':
+      description:
+      content:
+        application/json:
+          schema:
+            $ref : "../../schemas/Error.yaml"
+    default:
+      $ref: "../../responses/UnexpectedError.yaml"
