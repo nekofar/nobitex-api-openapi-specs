@@ -15,24 +15,26 @@ post:
           required:
             - username
             - password
-            - remember
             - captcha
           properties:
             username:
+              description: 'User email'
               type: string
-              example: your_username
+              example: 'your_username'
             password:
+              description: 'User password'
               type: string
-              example: your_password
+              example: 'your_password'
             remember:
+              description: 'Should long-term tokens be issued?'
               type: string
-              example: yes
+              example: 'yes'
             captcha:
               type: string
-              example: api
+              example: 'api'
             useragent:
               type: string
-              example: TraderBot/dsadadsa
+              example: 'TraderBot/dsadadsa'
   responses:
     '200':
       description:
@@ -43,14 +45,14 @@ post:
             properties:
               status:
                 type: string
-                example: success
+                example: 'success'
               key:
                 type: string
-                example: db2055f743c1ac8c30d23278a496283b1e2dd46f
+                example: 'db2055f743c1ac8c30d23278a496283b1e2dd46f'
               device:
                 type: string
-                example: AlRyansW
-    '429':
+                example: 'AlRyansW'
+    '400':
       description:
       content:
         application/json:
