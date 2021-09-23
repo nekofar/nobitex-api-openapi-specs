@@ -1,0 +1,53 @@
+get:
+  externalDocs:
+    url: 'https://apidocs.nobitex.ir/#35df8fda78'
+
+  responses:
+    200:
+      description: ''
+      content:
+        application/json:
+          schema:
+            type: object
+            properties:
+              status:
+                type: string
+                example: 'ok'
+              links:
+                type: array
+                items:
+                  type: object
+                  properties:
+                    id:
+                      type: number
+                    referralCode:
+                      type: string
+                    createdAt:
+                      type: string
+                    userShare:
+                      type: number
+                    friendShare:
+                      type: number
+                    description:
+                      type: object
+                      properties:
+                    statsRegisters:
+                      type: number
+                    statsTrades:
+                      type: number
+                    statsProfit:
+                      type: number
+                  example: {
+                    "id": 23454,
+                    "referralCode": "895606",
+                    "createdAt": "2021-09-23T19:12:34.727180+00:00",
+                    "userShare": 30,
+                    "friendShare": 0,
+                    "description": null,
+                    "statsRegisters": 0,
+                    "statsTrades": 0,
+                    "statsProfit": 0
+                  }
+
+  security:
+    - bearerAuth: [ ]
