@@ -29,21 +29,12 @@ get:
                   properties:
                     time:
                       type: number
-                      examples:
-                        - 1588689375067
-                        - 1588689360464
                     price:
                       type: string
-                      examples:
-                        - "1470000110"
-                        - "1470000110"
                     volume:
                       type: string
-                      examples:
-                        - "0"
-                        - "0.002"
                     type:
                       type: string
-                      examples:
-                        - "sell"
-                        - "buy"
+                example:
+                  - { "time": 1588689375067, "price": "1470000110", "volume": "0", "type": "sell" }
+                  - { "time": 1588689360464, "price": "1470000110", "volume": "0.002", "type": "buy" }
