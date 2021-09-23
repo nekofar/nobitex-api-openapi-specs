@@ -16,15 +16,13 @@ post:
             - dstCurrency
           properties:
             srcCurrency:
+              description: 'Origin currencies'
               type: string
-              examples: 
-                - btc
-                - usdt
+              example: 'usdt'
             dstCurrency:
+              description: 'Destination currencies'
               type: string
-              examples:
-                - rls
-                - usd
+              example: 'rls'
   responses:
     '200':
       description:
