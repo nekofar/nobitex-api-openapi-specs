@@ -67,3 +67,5 @@ post:
                 items:
                   type: string
                   example: ['OTP not provided']
+  security:
+    - basicAuth: [ ]
