@@ -1,9 +1,12 @@
 post:
-  summary: Authentication
-  operationId: authLogin
-  description: User login
   tags:
     - authentication
+  summary: Authentication
+  description: User login
+  externalDocs:
+    description: Find more info here
+    url: https://apidocs.nobitex.ir/#892283139f
+  operationId: authLogin
   requestBody:
     content:
       application/json:
