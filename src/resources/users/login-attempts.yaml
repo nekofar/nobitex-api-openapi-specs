@@ -1,0 +1,34 @@
+get:
+  externalDocs:
+    url: 'https://apidocs.nobitex.ir/#e0478463ad'
+  responses:
+    200:
+      description: ''
+      content:
+        application/json:
+          schema:
+            type: object
+            properties:
+              status:
+                type: string
+                example: 'ok'
+              attempts:
+                type: array
+                items:
+                  type: object
+                  properties:
+                    ip:
+                      type: string
+                    username:
+                      type: string
+                    status:
+                      type: string
+                    createdAt:
+                      type: string
+                  example:
+                    ip: "46.209.130.106"
+                    username: "name@example.com"
+                    status: "Successful"
+                    createdAt: "2018-11-28T14:16:08.264308+00:00"
+  security:
+    - bearerAuth: [ ]

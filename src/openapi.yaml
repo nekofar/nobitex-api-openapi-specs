@@ -1,0 +1,92 @@
+openapi: '3.0.3'
+
+info:
+  version: '1.0.0'
+  title: 'Nobitex Exchange'
+  description: 'Nobitex Exchange API'
+  license:
+    name: 'MIT'
+  contact:
+    name: 'API Support'
+    url: 'https://nobitex.ir'
+    email: ''
+
+servers:
+  - url: 'https://api.nobitex.ir'
+  - url: 'https://testnetapi.nobitex.ir'
+
+paths:
+  /auth/login/:
+    $ref: './resources/auth/login.yaml'
+  /auth/logout/:
+    $ref: './resources/auth/logout.yaml'
+  /v2/orderbook/{symbol}:
+    $ref: './resources/v2/orderbook.yaml'
+  /v2/trades/{symbol}:
+    $ref: './resources/v2/trades.yaml'
+  /market/stats:
+    $ref: './resources/market/stats.yaml'
+  /market/udf/history:
+    $ref: "./resources/market/udf/history.yaml"
+  /market/global-stats:
+    $ref: './resources/market/global-stats.yaml'
+  /users/profile:
+    $ref: './resources/users/profile.yaml'
+  /users/login-attempts:
+    $ref: './resources/users/login-attempts.yaml'
+  /users/cards-add:
+    $ref: './resources/users/cards-add.yaml'
+  /users/accounts-add:
+    $ref: './resources/users/accounts-add.yaml'
+  /users/limitations:
+    $ref: './resources/users/limitations.yaml'
+  /users/wallets/list:
+    $ref: './resources/users/wallets/list.yaml'
+  /v2/wallets:
+    $ref: './resources/v2/wallets.yaml'
+  /users/wallets/balance:
+    $ref: './resources/users/wallets/balance.yaml'
+  /users/wallets/transactions/list:
+    $ref: './resources/users/wallets/transactions/list.yaml'
+  /users/wallets/deposits/list:
+    $ref: './resources/users/wallets/deposits/list.yaml'
+  /users/wallets/generate-address:
+    $ref: './resources/users/wallets/generate-address.yaml'
+  /market/orders/add:
+    $ref: './resources/market/orders/add.yaml'
+  /market/orders/status:
+    $ref: './resources/market/orders/status.yaml'
+  /market/orders/list:
+    $ref: './resources/market/orders/list.yaml'
+  /market/orders/update-status:
+    $ref: './resources/market/orders/update-status.yaml'
+  /market/orders/cancel-old:
+    $ref: './resources/market/orders/cancel-old.yaml'
+  /security/emergency-cancel/activate:
+    $ref: './resources/security/emergency-cancel/activate.yaml'
+  /users/referral/links-list:
+    $ref: './resources/users/referral/links-list.yaml'
+  /users/get-referral-code:
+    $ref: './resources/users/get-referral-code.yaml'
+  /users/referral/referral-status:
+    $ref: './resources/users/referral/referral-status.yaml'
+  /users/referral/set-referrer:
+    $ref: './resources/users/referral/set-referrer.yaml'
+
+components:
+  parameters:
+    $ref: './parameters/_index.yaml'
+  schemas:
+    $ref: './schemas/_index.yaml'
+  responses:
+    $ref: './responses/_index.yaml'
+  securitySchemes:
+    basicAuth:
+      description: Basic Authentication
+      type: http
+      scheme: basic
+    bearerAuth:
+      description: Bearer Authentication
+      type: apiKey
+      name: Authorization
+      in: header

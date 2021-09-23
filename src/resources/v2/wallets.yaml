@@ -1,0 +1,43 @@
+post:
+  externalDocs:
+    url: 'https://apidocs.nobitex.ir/#1ff004071d'
+
+  requestBody:
+    content:
+      application/json:
+        schema:
+          type: object
+          properties:
+            currencies:
+              type: string
+              example: 'rls,btc'
+
+  responses:
+    200:
+      description: ''
+      content:
+        application/json:
+          schema:
+            type: object
+            properties:
+              status:
+                type: string
+              wallets:
+                type: object
+                additionalProperties:
+                  type: object
+                  properties:
+                    type: object
+                    properties:
+                      id:
+                        type: number
+                      balance:
+                        type: string
+                      blocked:
+                        type: string
+                example:
+                  RLS: { "id": 133777, "balance": "0E-10", "blocked": "0" }
+
+  security:
+    - bearerAuth: [ ]
+

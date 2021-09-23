@@ -1,0 +1,29 @@
+post:
+  externalDocs:
+    url: 'https://apidocs.nobitex.ir/#cdf265d0e6'
+
+  responses:
+    200:
+      description: ''
+      content:
+        application/json:
+          schema:
+            type: object
+            properties:
+              status:
+                type: string
+              markets:
+                type: object
+                additionalProperties:
+                  type: object
+                example:
+                  binance: { "btc": 43773.44, "eth": 3098.7, "bch": 541.1, "xrp": 0.9809 }
+              additionalProperties:
+                type: object
+                properties:
+                  kraken:
+                    type: object
+                    properties:
+                      price:
+                        type: object
+                example: { "pmn": { "kraken": { "price": null } }, "doge": { "kraken": { "price": "0.2224000" } } }

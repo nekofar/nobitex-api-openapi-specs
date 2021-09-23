@@ -1,0 +1,85 @@
+post:
+  externalDocs:
+    url: 'https://apidocs.nobitex.ir/#e12b63a512'
+
+  requestBody:
+    description: ''
+    content:
+      application/json:
+        schema:
+          type: object
+          properties:
+            type:
+              type: string
+            srcCurrency:
+              type: string
+            dstCurrency:
+              type: string
+            amount:
+              type: string
+            price:
+              type: number
+          example: { "type": "buy","srcCurrency": "btc","dstCurrency": "rls","amount": "0.6","price": 520000000 }
+
+  responses:
+    200:
+      description: ''
+      content:
+        application/json:
+          schema:
+            type: object
+            properties:
+              status:
+                type: string
+                example: 'ok'
+              order:
+                type: object
+                properties:
+                  type:
+                    type: string
+                  srcCurrency:
+                    type: string
+                  dstCurrency:
+                    type: string
+                  price:
+                    type: string
+                  amount:
+                    type: string
+                  totalPrice:
+                    type: string
+                  matchedAmount:
+                    type: number
+                  unmatchedAmount:
+                    type: string
+                  id:
+                    type: number
+                  status:
+                    type: string
+                  partial:
+                    type: boolean
+                  fee:
+                    type: number
+                  user:
+                    type: string
+                  created_at:
+                    type: string
+                example: {
+                  "type": "sell",
+                  "srcCurrency": "Bitcoin",
+                  "dstCurrency": "ریال",
+                  "price": "520000000",
+                  "amount": "0.6",
+                  "totalPrice": "312000000.0",
+                  "matchedAmount": 0,
+                  "unmatchedAmount": "0.6",
+                  "id": 25,
+                  "status": "Active",
+                  "partial": false,
+                  "fee": 0,
+                  "user": "name@example.com",
+                  "created_at": "2018-11-28T11:36:13.592827+00:00"
+                }
+
+  security:
+    - bearerAuth: [ ]
+

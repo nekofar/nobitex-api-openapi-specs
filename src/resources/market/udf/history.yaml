@@ -1,0 +1,67 @@
+get:
+  externalDocs:
+    url: https://apidocs.nobitex.ir/#ohlc
+
+  parameters:
+    - name: symbol
+      in: query
+      schema:
+        type: string
+        example: BTCIR
+    - name: resolution
+      in: query
+      schema:
+        type: string
+        example: D
+    - name: from
+      in: query
+      schema:
+        type: integer
+        example: 1562120967
+    - name: to
+      in: query
+      schema:
+        type: integer
+        example: 1562230967
+
+  responses:
+    200:
+      description: ''
+      content:
+        application/json:
+          schema:
+            type: object
+            properties:
+              s:
+                type: string
+                example: ok
+              t:
+                type: array
+                items:
+                  type: number
+                  example: 1562182200
+              c:
+                type: array
+                items:
+                  type: string
+                  example: '157000000.0000000000'
+              o:
+                type: array
+                items:
+                  type: string
+                  example: '150551000.0000000000'
+              h:
+                type: array
+                items:
+                  type: string
+                  example: '161869500.0000000000'
+              l:
+                type: array
+                items:
+                  type: string
+                  example: '150551000.0000000000'
+              v:
+                type: array
+                items:
+                  type: string
+                  example: '9.8592626506'

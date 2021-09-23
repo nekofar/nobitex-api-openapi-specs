@@ -1,0 +1,68 @@
+post:
+  externalDocs:
+    url: 'https://apidocs.nobitex.ir/#892283139f'
+
+  requestBody:
+    content:
+      multipart/form-data:
+        schema:
+          type: object
+          required:
+            - username
+            - password
+            - captcha
+          properties:
+            username:
+              description: 'User email'
+              type: string
+              example: 'your_username'
+            password:
+              description: 'User password'
+              type: string
+              example: 'your_password'
+            remember:
+              description: 'Should long-term tokens be issued?'
+              type: string
+              example: 'yes'
+            captcha:
+              type: string
+              example: 'api'
+            useragent:
+              type: string
+              example: 'TraderBot/dsadadsa'
+
+  responses:
+    200:
+      description:
+      content:
+        application/json:
+          schema:
+            type: object
+            properties:
+              status:
+                type: string
+                example: 'success'
+              key:
+                type: string
+                example: 'db2055f743c1ac8c30d23278a496283b1e2dd46f'
+              device:
+                type: string
+                example: 'AlRyansW'
+    '400':
+      description:
+      content:
+        application/json:
+          schema:
+            type: object
+            properties:
+              code:
+                type: string
+                example: 'MissingOTP'
+              non_field_errors:
+                type: array
+                items:
+                  type: string
+                  example: [ 'OTP not provided' ]
+
+  security:
+    - basicAuth: [ ]

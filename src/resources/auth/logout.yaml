@@ -1,0 +1,29 @@
+post:
+  externalDocs:
+    url: 'https://apidocs.nobitex.ir/#9bf73579b0'
+
+  responses:
+    200:
+      content:
+        application/json:
+          schema:
+            type: object
+            properties:
+              detail:
+                type: string
+                example: 'Logout completed successfully.'
+              message:
+                type: string
+                example: 'Logout completed successfully.'
+    401:
+      content:
+        application/json:
+          schema:
+            type: object
+            properties:
+              detail:
+                type: string
+                example: 'Unauthorized tokens'
+
+  security:
+    - bearerAuth: [ ]

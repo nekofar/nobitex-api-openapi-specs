@@ -1,0 +1,18 @@
+get:
+  externalDocs:
+    url: 'https://apidocs.nobitex.ir/#383aaeedc8'
+
+  responses:
+    200:
+      description: ''
+      content:
+        application/json:
+          schema:
+            type: object
+            properties:
+              hasReferrer:
+                type: boolean
+                example: true
+
+  security:
+    - bearerAuth: [ ]

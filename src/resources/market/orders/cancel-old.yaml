@@ -1,0 +1,37 @@
+post:
+  externalDocs:
+    url: 'https://apidocs.nobitex.ir/#27f17a67f7'
+
+  requestBody:
+    content:
+      application/json:
+        schema:
+          type: object
+          required:
+            - srcCurrency
+            - dstCurrency
+          properties:
+            hours:
+              type: float
+            execution:
+              type: string
+            srcCurrency:
+              type: string
+            dstCurrency:
+              type: string
+          example: { "execution": "limit","srcCurrency": "btc","dstCurrency": "rls","hours": 2.4 }
+
+  responses:
+    200:
+      description: ''
+      content:
+        application/json:
+          schema:
+            type: object
+            properties:
+              status:
+                type: string
+                example: 'ok'
+
+  security:
+    - bearerAuth: [ ]

@@ -1,0 +1,119 @@
+post:
+  externalDocs:
+    url: 'https://apidocs.nobitex.ir/#839c14d5aa'
+
+  requestBody:
+    description: ''
+    content:
+      application/json:
+        schema:
+          type: object
+          properties:
+            wallet:
+              type: string
+              example: '4159'
+
+  responses:
+    200:
+      description: ''
+      content:
+        application/json:
+          schema:
+            type: object
+            properties:
+              status:
+                type: string
+                example: 'ok'
+              deposits:
+                type: array
+                items:
+                  type: object
+                  properties:
+                    txHash:
+                      type: string
+                    address:
+                      type: string
+                    confirmed:
+                      type: boolean
+                    transaction:
+                      type: object
+                      properties:
+                        id:
+                          type: number
+                        amount:
+                          type: string
+                        currency:
+                          type: string
+                        description:
+                          type: string
+                        created_at:
+                          type: string
+                        calculatedFee:
+                          type: string
+                    currency:
+                      type: string
+                    blockchainUrl:
+                      type: string
+                    confirmations:
+                      type: number
+                    requiredConfirmations:
+                      type: number
+                    amount:
+                      type: string
+                example:
+                  - {
+                    "txHash": "c5d84268a0bf02307b5a0460a68b61987a9b3009d3a82a817e41558e619ec1d2",
+                    "address": "32KfyTNh162UoKithfDrWHZPYq5uePGmf7",
+                    "confirmed": true,
+                    "transaction": {
+                      "id": 10,
+                      "amount": "3.0000000000",
+                      "currency": "btc",
+                      "description": "Deposit - address:36n452uGq1x4mK7bfyZR8wgE47AnBb2pzi, tx:c5d84268a0bf02307b5a0460a68b61987a9b3009d3a82a817e41558e619ec1d2",
+                      "created_at": "2018-11-06T03:56:18+00:00",
+                      "calculatedFee": "0"
+                    },
+                    "currency": "Bitcoin",
+                    "blockchainUrl": "https://btc.com/c5d84268a0bf02307b5a0460a68b61987a9b3009d3a82a817e41558e619ec1d2",
+                    "confirmations": 2,
+                    "requiredConfirmations": 3,
+                    "amount": "3.0000000000"
+                  }
+              withdraws:
+                type: array
+                items:
+                  type: object
+                  properties:
+                    id:
+                      type: number
+                    blockchain_url:
+                      type: string
+                    is_cancelable:
+                      type: boolean
+                    status:
+                      type: string
+                    amount:
+                      type: string
+                    createdAt:
+                      type: string
+                    wallet_id:
+                      type: number
+                    currency:
+                      type: string
+                    address:
+                      type: string
+                example:
+                  - {
+                    "id": 2398,
+                    "blockchain_url": "https://live.blockcypher.com/ltc/tx/c1ed4229e598d4cf81e99e79fb06294a70af39443e2639e22c69bc30d6ecda67/",
+                    "is_cancelable": false,
+                    "status": "Done",
+                    "amount": "1.0000000000",
+                    "createdAt": "2018-10-04T12:59:38.196935+00:00",
+                    "wallet_id": 4159,
+                    "currency": "ltc",
+                    "address": "Lgn1zc77mEjk72KvXPqyXq8K1mAfcDE6YR"
+                  }
+
+  security:
+    - bearerAuth: [ ]

@@ -1,0 +1,32 @@
+post:
+  externalDocs:
+    url: 'https://apidocs.nobitex.ir/#cdbcd8fa96'
+
+  requestBody:
+    content:
+      application/json:
+        schema:
+          type: object
+          properties:
+            order:
+              type: integer
+            status:
+              type: string
+          example: { "order": 5684,"status": "canceled" }
+
+  responses:
+    200:
+      description: ''
+      content:
+        application/json:
+          schema:
+            type: object
+            properties:
+              status:
+                type: string
+              updatedStatus:
+                type: string
+            example: { "status": "ok", "updatedStatus": "Canceled" }
+
+  security:
+    - bearerAuth: [ ]
