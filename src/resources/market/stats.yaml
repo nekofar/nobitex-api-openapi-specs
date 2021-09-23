@@ -1,7 +1,7 @@
 post:
   tags:
-  summary:
-  description:
+  summary: 'Market statistics'
+  description: 'Use this type of request to receive the latest market statistics'
   externalDocs:
     description: Find more info here
     url: https://apidocs.nobitex.ir/#6ae2dae4a2
