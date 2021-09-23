@@ -1,0 +1,76 @@
+post:
+  summary:
+  operationId:
+  description:
+  tags:
+  requestBody:
+    content:
+      application/json:
+        schema:
+          type: object
+          required:
+            - srcCurrency
+            - dstCurrency
+          properties:
+            srcCurrency:
+              type: string
+              examples: 
+                - btc
+                - usdt
+            dstCurrency:
+              type: string
+              examples:
+                - rls
+                - usd
+  responses:
+    '200':
+      description:
+      content:
+        application/json:
+          schema:
+            type: object
+            properties:
+              status:
+                type: string
+              stats:
+                type: object
+                patternProperties:
+                  '^[a-z]*$':
+                      type: object
+                      properties:
+                        bestSell:
+                          type: string
+                          example: "749976360.0000000000"
+                        isClosed:
+                          type: boolean
+                          example: false
+                        dayOpen:
+                          type: string
+                          example: "686021860.0000000000"
+                        dayHigh:
+                          type: string
+                          example: "750350000.0000000000"
+                        bestBuy:
+                          type: string
+                          example: "733059600.0000000000"
+                        volumeSrc:
+                          type: string
+                          example: "0.2929480000"
+                        dayLow:
+                          type: string
+                          example: "686021860.0000000000"
+                        latest:
+                          type: string
+                          example: "750350000.0000000000"
+                        volumeDst:
+                          type: string
+                          example: "212724856.0678640000"
+                        dayChange:
+                          type: string
+                          example: "9.38"
+                        dayClose:
+                          type: string
+                          example: "750350000.0000000000"
+    default:
+      $ref: "../../responses/UnexpectedError.yaml"
+
