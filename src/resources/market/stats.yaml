@@ -1,4 +1,6 @@
 post:
+  summary: Stats
+
   operationId: marketStats
 
   externalDocs:

@@ -1,4 +1,6 @@
 post:
+  summary: Accounts add
+
   operationId: usersAccountsAdd
 
   externalDocs:

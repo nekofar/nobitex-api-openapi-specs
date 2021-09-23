@@ -1,4 +1,6 @@
 get:
+  summary: Limitations
+
   operationId: usersLimitations
 
   externalDocs:

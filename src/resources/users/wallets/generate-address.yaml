@@ -1,4 +1,6 @@
 post:
+  summary: Generate wallet address
+
   operationId: usersWalletsGenerateAddress
 
   externalDocs:

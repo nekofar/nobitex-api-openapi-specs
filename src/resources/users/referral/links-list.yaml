@@ -1,4 +1,6 @@
 get:
+  summary: Referral links list
+  
   operationId: usersReferalLinksList
 
   externalDocs:

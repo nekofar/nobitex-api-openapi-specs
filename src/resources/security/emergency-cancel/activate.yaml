@@ -1,4 +1,6 @@
 get:
+  summary: Activate an emergency cancel
+
   operationId: securityEmergencyCancelActivate
 
   externalDocs:

@@ -1,4 +1,6 @@
 post:
+  summary: Orders list
+
   operationId: marketOrdersList
 
   externalDocs:

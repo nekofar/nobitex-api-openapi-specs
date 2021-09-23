@@ -1,4 +1,6 @@
 get:
+  summary: Referral status
+
   operationId: usersReferalReferalStatus
 
   externalDocs:

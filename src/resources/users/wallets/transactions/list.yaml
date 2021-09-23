@@ -1,4 +1,6 @@
 post:
+  summary: Transactions list
+
   operationId: usersWalletsTransactionList
 
   externalDocs:

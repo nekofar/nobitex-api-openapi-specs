@@ -1,4 +1,6 @@
 get:
+  summary: Profile
+
   operationId: usersProfile
 
   externalDocs:

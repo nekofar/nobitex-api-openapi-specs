@@ -1,4 +1,6 @@
 post:
+  summary: Update status
+
   operationId: marketOrdersUpdateStatus
 
   externalDocs:

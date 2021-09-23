@@ -1,4 +1,6 @@
 post:
+  summary: Wallets (on demand)
+
   operationId: wallets
 
   externalDocs:

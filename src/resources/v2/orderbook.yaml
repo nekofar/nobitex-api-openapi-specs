@@ -1,4 +1,6 @@
 get:
+  summary: Orderbook
+
   operationId: orderbook
 
   externalDocs:

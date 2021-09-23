@@ -1,4 +1,6 @@
 get:
+  summary: Set referrer
+
   operationId: usersReferalSetReferrer
 
   externalDocs:

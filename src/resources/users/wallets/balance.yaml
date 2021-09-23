@@ -1,4 +1,6 @@
 post:
+  summary: Balance
+
   operationId: usersWalletsBalance
 
   externalDocs:
