@@ -1,0 +1,78 @@
+post:
+  externalDocs:
+    url: 'https://apidocs.nobitex.ir/#a2ce8ff7e3'
+
+  requestBody:
+    content:
+      application/json:
+        schema:
+          type: object
+          properties:
+            status:
+              type: string
+            type:
+              type: string
+            srcCurrency:
+              type: string
+            dstCurrency:
+              type: string
+            details:
+              type: integer
+          example: {"srcCurrency":"btc","dstCurrency":"usdt","details":2}
+
+  responses:
+    200:
+      description: ''
+      content:
+        application/json:
+          schema:
+            type: object
+            properties:
+              status:
+                type: string
+                example: 'ok'
+              orders:
+                type: array
+                items:
+                  type: object
+                  properties:
+                    id:
+                      type: number
+                    type:
+                      type: string
+                    execution:
+                      type: string
+                    status:
+                      type: string
+                    srcCurrency:
+                      type: string
+                    dstCurrency:
+                      type: string
+                    price:
+                      type: string
+                    amount:
+                      type: string
+                    matchedAmount:
+                      type: string
+                    averagePrice:
+                      type: string
+                    fee:
+                      type: string
+                example:
+                  - {
+                    "id": 173546223,
+                    "type": "sell",
+                    "execution": "Limit",
+                    "status": "Active",
+                    "srcCurrency": "Bitcoin",
+                    "dstCurrency": "Tether",
+                    "price": "9750.01",
+                    "amount": "0.0123",
+                    "matchedAmount": "0E-10",
+                    "averagePrice": "0",
+                    "fee": "0E-10"
+                  }
+
+  security:
+    - bearerAuth: [ ]
+
