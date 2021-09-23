@@ -9,7 +9,7 @@ post:
   operationId: authLogin
   requestBody:
     content:
-      application/json:
+      multipart/form-data:
         schema:
           type: object
           required:
