@@ -1,9 +1,8 @@
 get:
-  summary:
+  tags:
+  summary: Order list
   operationId: getOrderbook
   description: Get the orderbook for a given symbol
-  tags:
-    - orderbook
   parameters:
     - name: symbol
       in: path
@@ -18,7 +17,7 @@ get:
             properties:
               status:
                 type: string
-                example: ok
+                example: 'ok'
               bids:
                 type: array
                 items:
@@ -37,6 +36,3 @@ get:
     '404':
       description:
         content: { }
-
-    default:
-      $ref: "../../responses/UnexpectedError.yaml"
