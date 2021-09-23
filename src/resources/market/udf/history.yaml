@@ -1,8 +1,11 @@
 get:
-  summary:
-  operationId:
-  description: OHLC statistics of Nobitex market
   tags:
+  summary: 'OHLC market statistics'
+  description: 'OHLC statistics of market'
+  externalDocs:
+    description: Find more info here
+    url: https://apidocs.nobitex.ir/#ohlc
+  operationId:
   parameters:
     - name: symbol
       in: query
