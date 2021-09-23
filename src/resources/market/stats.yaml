@@ -8,7 +8,7 @@ post:
   operationId:
   requestBody:
     content:
-      application/json:
+      multipart/form-data:
         schema:
           type: object
           required:
