@@ -1,0 +1,28 @@
+get:
+  externalDocs:
+    url: 'https://apidocs.nobitex.ir/#b71dfde1d6'
+
+  requestBody:
+    content:
+      application/json:
+        schema:
+          type: object
+          properties:
+            referrerCode:
+              type: string
+              example: '40404'
+
+  responses:
+    200:
+      description: ''
+      content:
+        application/json:
+          schema:
+            type: object
+            properties:
+              status:
+                type: string
+                example: 'ok'
+
+  security:
+    - bearerAuth: [ ]
