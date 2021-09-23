@@ -1,16 +1,18 @@
 get:
-  summary:
-  operationId: getTrades
-  description: Get all trades for specified symbol
   tags:
-    - trades
+  summary:
+  description: Get all trades for specified symbol
+  externalDocs:
+    description: Find more info here
+    url: https://apidocs.nobitex.ir/#3fe8d57657
+  operationId: getTrades
   parameters:
     - name: symbol
       in: path
       required: true
       description: Symbol to get trades for
   responses:
-    "200":
+    '200':
       description:
       content:
         application/json:
@@ -45,5 +47,3 @@ get:
                       examples:
                         - "sell"
                         - "buy"
-    default:
-      $ref: "../../responses/UnexpectedError.yaml"
