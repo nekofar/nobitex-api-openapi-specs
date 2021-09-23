@@ -6,6 +6,8 @@ get:
   parameters:
     - name: symbol
       in: path
+      example: 'BTCIRT'
+      description: Symbol
       required: true
   responses:
     '200':
