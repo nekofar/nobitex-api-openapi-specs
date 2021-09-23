@@ -1,11 +1,9 @@
 get:
-  tags:
   summary: 'OHLC market statistics'
   description: 'OHLC statistics of market'
   externalDocs:
     description: Find more info here
     url: https://apidocs.nobitex.ir/#ohlc
-  operationId:
   parameters:
     - name: symbol
       in: query
@@ -20,16 +18,16 @@ get:
     - name: from
       in: query
       schema:
-        type: int
+        type: integer
         example: 1562120967
     - name: to
       in: query
       schema:
-        type: int
+        type: integer
         example: 1562230967
   responses:
-    "200":
-      description:
+    '200':
+      description: ''
       content:
         application/json:
           schema:
@@ -47,7 +45,7 @@ get:
                 type: array
                 items:
                   type: string
-                  example: "157000000.0000000000"
+                  example: '157000000.0000000000"
               o:
                 type: array
                 items:
@@ -68,5 +66,3 @@ get:
                 items:
                   type: string
                   example: "9.8592626506"
-    default:
-      $ref: "../../../responses/UnexpectedError.yaml"

@@ -1,12 +1,11 @@
 post:
   tags:
-    - authentication
+    - auth
   summary: Authentication
   description: User logout
   externalDocs:
     description: Find more info here
     url: https://apidocs.nobitex.ir/#9bf73579b0
-  operationId: authLogout
   responses:
     '200':
       content:

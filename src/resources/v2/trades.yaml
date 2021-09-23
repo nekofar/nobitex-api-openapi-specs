@@ -1,11 +1,11 @@
 get:
   tags:
+    - users
   summary:
   description: Get all trades for specified symbol
   externalDocs:
     description: Find more info here
     url: https://apidocs.nobitex.ir/#3fe8d57657
-  operationId: getTrades
   parameters:
     - name: symbol
       in: path
