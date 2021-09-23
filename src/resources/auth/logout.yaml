@@ -1,9 +1,9 @@
 post:
-  summary: Authentication
-  operationId: authLogout
-  description: User logout
   tags:
     - authentication
+  summary: Authentication
+  description: User logout
+  operationId: authLogout
   responses:
     "200":
       content:
@@ -17,3 +17,5 @@ post:
                 type: string
     default:
       $ref: "../../responses/UnexpectedError.yaml"
+  security:
+    - bearerAuth: [ ]
