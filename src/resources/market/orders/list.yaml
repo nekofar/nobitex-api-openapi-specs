@@ -1,4 +1,6 @@
 post:
+  operationId: marketOrdersList
+
   externalDocs:
     url: 'https://apidocs.nobitex.ir/#a2ce8ff7e3'
 

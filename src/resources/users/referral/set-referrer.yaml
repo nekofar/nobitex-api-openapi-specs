@@ -1,4 +1,6 @@
 get:
+  operationId: usersReferalSetReferrer
+
   externalDocs:
     url: 'https://apidocs.nobitex.ir/#b71dfde1d6'
 

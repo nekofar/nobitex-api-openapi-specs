@@ -1,4 +1,6 @@
 post:
+  operationId: usersWalletsDepositsList
+
   externalDocs:
     url: 'https://apidocs.nobitex.ir/#839c14d5aa'
 

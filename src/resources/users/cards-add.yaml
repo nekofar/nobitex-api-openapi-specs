@@ -1,4 +1,6 @@
 post:
+  operationId: usersCardsAdd
+
   externalDocs:
     url: 'https://apidocs.nobitex.ir/#f9fd4e8e3a'
 

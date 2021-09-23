@@ -1,4 +1,6 @@
 post:
+  operationId: authLogin
+
   externalDocs:
     url: 'https://apidocs.nobitex.ir/#892283139f'
 

@@ -1,4 +1,6 @@
 get:
+  operationId: usersLimitations
+
   externalDocs:
     url: 'https://apidocs.nobitex.ir/#e2ecdd60d4'
 

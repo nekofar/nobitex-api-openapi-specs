@@ -1,4 +1,6 @@
 get:
+  operationId: orderbook
+
   externalDocs:
     url: https://apidocs.nobitex.ir/#a283f9354b
 

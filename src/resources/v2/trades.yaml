@@ -1,4 +1,6 @@
 get:
+  operationId: trades
+
   externalDocs:
     url: https://apidocs.nobitex.ir/#3fe8d57657
 

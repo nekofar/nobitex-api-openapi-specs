@@ -1,4 +1,6 @@
 post:
+  operationId: marketStats
+
   externalDocs:
     url: https://apidocs.nobitex.ir/#6ae2dae4a2
 

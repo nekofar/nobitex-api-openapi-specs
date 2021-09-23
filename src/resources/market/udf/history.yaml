@@ -1,4 +1,6 @@
 get:
+  operationId: marketUdfHistory
+
   externalDocs:
     url: https://apidocs.nobitex.ir/#ohlc
 

@@ -1,4 +1,6 @@
 post:
+  operationId: marketOrdersCancel
+
   externalDocs:
     url: 'https://apidocs.nobitex.ir/#27f17a67f7'
 
