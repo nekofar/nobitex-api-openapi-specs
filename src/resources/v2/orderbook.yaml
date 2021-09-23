@@ -1,8 +1,11 @@
 get:
   tags:
   summary: Order list
-  operationId: getOrderbook
   description: Get the orderbook for a given symbol
+  externalDocs:
+    description: Find more info here
+    url: https://apidocs.nobitex.ir/#a283f9354b
+  operationId: getOrderbook
   parameters:
     - name: symbol
       in: path
