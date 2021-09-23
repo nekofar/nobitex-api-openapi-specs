@@ -1,0 +1,32 @@
+post:
+  externalDocs:
+    url: 'https://apidocs.nobitex.ir/#55645b2c6d'
+
+  requestBody:
+    description: ''
+    content:
+      application/json:
+        schema:
+          type: object
+          properties:
+            currency:
+              type: string
+              example: 'ltc'
+
+  responses:
+    200:
+      description: ''
+      content:
+        application/json:
+          schema:
+            type: object
+            properties:
+              status:
+                type: string
+                example: 'ok'
+              balance:
+                type: string
+                example: "10.2649975000"
+
+  security:
+    - bearerAuth: [ ]
