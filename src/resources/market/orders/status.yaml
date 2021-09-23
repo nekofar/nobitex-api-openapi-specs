@@ -1,0 +1,77 @@
+post:
+  externalDocs:
+    url: 'https://apidocs.nobitex.ir/#8c18d795de'
+
+  requestBody:
+    content:
+      application/json:
+        schema:
+          type: object
+          properties:
+            id:
+              type: integer
+              example: 5684
+
+  responses:
+    200:
+      description: ''
+      content:
+        application/json:
+          schema:
+            type: object
+            properties:
+              status:
+                type: string
+                example: 'ok'
+              order:
+                type: object
+                properties:
+                  type:
+                    type: string
+                  srcCurrency:
+                    type: string
+                  dstCurrency:
+                    type: string
+                  price:
+                    type: string
+                  amount:
+                    type: string
+                  totalPrice:
+                    type: string
+                  matchedAmount:
+                    type: number
+                  unmatchedAmount:
+                    type: string
+                  id:
+                    type: number
+                  status:
+                    type: string
+                  partial:
+                    type: boolean
+                  fee:
+                    type: number
+                  user:
+                    type: string
+                  created_at:
+                    type: string
+                example: {
+                  "unmatchedAmount": "3.0000000000",
+                  "fee": "0E-10",
+                  "matchedAmount": "0E-10",
+                  "partial": false,
+                  "price": "8500000.0000000000",
+                  "created_at": "2018-11-28T12:25:22.696029+00:00",
+                  "user": "name@example.com",
+                  "id": 5684,
+                  "srcCurrency": "Litecoin",
+                  "totalPrice": "25500000.00000000000000000000",
+                  "type": "sell",
+                  "dstCurrency": "\ufdfc",
+                  "isMyOrder": false,
+                  "status": "Active",
+                  "amount": "3.0000000000"
+                }
+
+  security:
+    - bearerAuth: [ ]
+
