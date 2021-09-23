@@ -1,0 +1,45 @@
+get:
+  externalDocs:
+    url: 'https://apidocs.nobitex.ir/#e2ecdd60d4'
+  responses:
+    200:
+      description: ''
+      content:
+        application/json:
+          schema:
+            type: object
+          example:
+            {
+              "status": "ok",
+              "limitations": {
+                "userLevel": "level2",
+                "features": {
+                  "crypto_trade": false,
+                  "rial_trade": false,
+                  "coin_deposit": false,
+                  "rial_deposit": false,
+                  "coin_withdrawal": false,
+                  "rial_withdrawal": false
+                },
+                "limits": {
+                  "withdrawRialDaily": {
+                    "used": "0",
+                    "limit": "900000000"
+                  },
+                  "withdrawCoinDaily": {
+                    "used": "0",
+                    "limit": "2000000000"
+                  },
+                  "withdrawTotalDaily": {
+                    "used": "0",
+                    "limit": "2000000000"
+                  },
+                  "withdrawTotalMonthly": {
+                    "used": "0",
+                    "limit": "30000000000"
+                  }
+                }
+              }
+            }
+  security:
+    - bearerAuth: [ ]
