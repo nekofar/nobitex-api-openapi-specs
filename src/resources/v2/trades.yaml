@@ -1,19 +1,16 @@
 get:
-  tags:
-    - users
-  summary:
-  description: Get all trades for specified symbol
   externalDocs:
-    description: Find more info here
     url: https://apidocs.nobitex.ir/#3fe8d57657
+
   parameters:
     - name: symbol
       in: path
       required: true
       description: Symbol to get trades for
       example: 'BTCIRT'
+
   responses:
-    '200':
+    200:
       description:
       content:
         application/json:
@@ -39,6 +36,6 @@ get:
                 example:
                   - { "time": 1588689375067, "price": "1470000110", "volume": "0", "type": "sell" }
                   - { "time": 1588689360464, "price": "1470000110", "volume": "0.002", "type": "buy" }
-    '404':
+    404:
       description:
         content: { }

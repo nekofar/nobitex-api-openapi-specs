@@ -1,6 +1,7 @@
 post:
   externalDocs:
     url: 'https://apidocs.nobitex.ir/#0f4b9b52e8'
+
   requestBody:
     content:
       application/json:
@@ -14,6 +15,7 @@ post:
             bank:
               type: string
           example: { "number": "5041721011111111","shaba": "IR111111111111111111111111","bank": "Resalat" }
+
   responses:
     200:
       description: ''
@@ -25,6 +27,7 @@ post:
               status:
                 type: string
                 example: 'ok'
+
   security:
     - bearerAuth: [ ]
 

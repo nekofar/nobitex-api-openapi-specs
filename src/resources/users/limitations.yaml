@@ -1,6 +1,7 @@
 get:
   externalDocs:
     url: 'https://apidocs.nobitex.ir/#e2ecdd60d4'
+
   responses:
     200:
       description: ''
@@ -41,5 +42,6 @@ get:
                 }
               }
             }
+
   security:
     - bearerAuth: [ ]

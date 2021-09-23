@@ -1,19 +1,16 @@
 get:
-  tags:
-    - users
-  summary: Order list
-  description: Get the orderbook for a given symbol
   externalDocs:
-    description: Find more info here
     url: https://apidocs.nobitex.ir/#a283f9354b
+
   parameters:
     - name: symbol
       in: path
       example: 'BTCIRT'
       description: Symbol
       required: true
+
   responses:
-    '200':
+    200:
       description:
       content:
         application/json:
@@ -29,15 +26,15 @@ get:
                   type: array
                   items:
                     type: string
-                examples: [["1476091000","1.016"],["1479700000","0.2561"]]
+                examples: [ [ "1476091000","1.016" ],[ "1479700000","0.2561" ] ]
               asks:
                 type: array
                 items:
                   type: array
                   items:
                     type: string
-                examples: [[ "1470001120","0.126571"],["1470000000","0.818994"]]
+                examples: [ [ "1470001120","0.126571" ],[ "1470000000","0.818994" ] ]
 
-    '404':
+    404:
       description:
         content: { }

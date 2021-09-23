@@ -1,13 +1,9 @@
 post:
-  tags:
-    - auth
-  summary: Authentication
-  description: User logout
   externalDocs:
-    description: Find more info here
-    url: https://apidocs.nobitex.ir/#9bf73579b0
+    url: 'https://apidocs.nobitex.ir/#9bf73579b0'
+
   responses:
-    '200':
+    200:
       content:
         application/json:
           schema:
@@ -19,7 +15,7 @@ post:
               message:
                 type: string
                 example: 'Logout completed successfully.'
-    '401':
+    401:
       content:
         application/json:
           schema:
@@ -28,5 +24,6 @@ post:
               detail:
                 type: string
                 example: 'Unauthorized tokens'
+
   security:
     - bearerAuth: [ ]

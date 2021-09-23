@@ -1,11 +1,7 @@
 post:
-  tags:
-    - auth
-  summary: Authentication
-  description: User login
   externalDocs:
-    description: Find more info here
-    url: https://apidocs.nobitex.ir/#892283139f
+    url: 'https://apidocs.nobitex.ir/#892283139f'
+
   requestBody:
     content:
       multipart/form-data:
@@ -34,8 +30,9 @@ post:
             useragent:
               type: string
               example: 'TraderBot/dsadadsa'
+
   responses:
-    '200':
+    200:
       description:
       content:
         application/json:
@@ -65,6 +62,7 @@ post:
                 type: array
                 items:
                   type: string
-                  example: ['OTP not provided']
+                  example: [ 'OTP not provided' ]
+
   security:
     - basicAuth: [ ]

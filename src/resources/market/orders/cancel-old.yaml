@@ -19,7 +19,7 @@ post:
               type: string
             dstCurrency:
               type: string
-          example: {"execution":"limit","srcCurrency":"btc","dstCurrency":"rls","hours":2.4}
+          example: { "execution": "limit","srcCurrency": "btc","dstCurrency": "rls","hours": 2.4 }
 
   responses:
     200:

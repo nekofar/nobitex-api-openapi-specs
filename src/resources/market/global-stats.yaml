@@ -1,11 +1,9 @@
 post:
-  summary: 'Global statistics'
-  description: 'To get global market statistics'
   externalDocs:
-    description: 'Find more info here'
     url: 'https://apidocs.nobitex.ir/#cdf265d0e6'
+
   responses:
-    '200':
+    200:
       description: ''
       content:
         application/json:

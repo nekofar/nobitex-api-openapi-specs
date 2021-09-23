@@ -19,7 +19,7 @@ post:
               type: string
             price:
               type: number
-          example: {"type":"buy","srcCurrency":"btc","dstCurrency":"rls","amount":"0.6","price":520000000}
+          example: { "type": "buy","srcCurrency": "btc","dstCurrency": "rls","amount": "0.6","price": 520000000 }
 
   responses:
     200:

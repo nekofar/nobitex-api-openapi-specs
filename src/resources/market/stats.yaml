@@ -1,11 +1,7 @@
 post:
-  tags:
-  summary: 'Market statistics'
-  description: 'Use this type of request to receive the latest market statistics'
   externalDocs:
-    description: Find more info here
     url: https://apidocs.nobitex.ir/#6ae2dae4a2
-  operationId:
+
   requestBody:
     content:
       multipart/form-data:
@@ -23,8 +19,9 @@ post:
               description: 'Destination currencies'
               type: string
               example: 'rls'
+
   responses:
-    '200':
+    200:
       description:
       content:
         application/json:

@@ -18,7 +18,7 @@ post:
               type: string
             details:
               type: integer
-          example: {"srcCurrency":"btc","dstCurrency":"usdt","details":2}
+          example: { "srcCurrency": "btc","dstCurrency": "usdt","details": 2 }
 
   responses:
     200:

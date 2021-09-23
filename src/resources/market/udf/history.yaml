@@ -1,9 +1,7 @@
 get:
-  summary: 'OHLC market statistics'
-  description: 'OHLC statistics of market'
   externalDocs:
-    description: Find more info here
     url: https://apidocs.nobitex.ir/#ohlc
+
   parameters:
     - name: symbol
       in: query
@@ -25,8 +23,9 @@ get:
       schema:
         type: integer
         example: 1562230967
+
   responses:
-    '200':
+    200:
       description: ''
       content:
         application/json:
