@@ -1,0 +1,63 @@
+post:
+  externalDocs:
+    url: 'https://apidocs.nobitex.ir/#ae038c6100'
+
+  requestBody:
+    description: ''
+    content:
+      application/json:
+        schema:
+          type: object
+          properties:
+            wallet:
+              type: string
+              example: '4159'
+
+  responses:
+    200:
+      description: ''
+      content:
+        application/json:
+          schema:
+            type: object
+            properties:
+              status:
+                type: string
+                example: 'ok'
+              transactions:
+                type: array
+                items:
+                  type: object
+                  properties:
+                    currency:
+                      type: string
+                    created_at:
+                      type: string
+                    calculatedFee:
+                      type: string
+                    id:
+                      type: number
+                    amount:
+                      type: string
+                    description:
+                      type: string
+                example:
+                  - {
+                      "currency": "ltc",
+                      "created_at": "2018-10-17T09:41:08.519151+00:00",
+                      "calculatedFee": "0",
+                      "id": 99050,
+                      "amount": "4.3802000000",
+                      "description": "Buy 4,400 LTC at a unit price of 45 745,000"
+                    }
+                  - {
+                      "currency": "ltc",
+                      "created_at": "2018-10-04T13:05:01.384902+00:00",
+                      "calculatedFee": "0",
+                      "id": 96541,
+                      "amount": "-1.0000000000",
+                      "description": "Withdraw to \"Lgn1zc77mEjk72KvXPqyXq8K1mAfcDE6YR\""
+                    }
+
+  security:
+    - bearerAuth: [ ]
