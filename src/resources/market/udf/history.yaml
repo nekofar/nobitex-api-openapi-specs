@@ -45,24 +45,24 @@ get:
                 type: array
                 items:
                   type: string
-                  example: '157000000.0000000000"
+                  example: '157000000.0000000000'
               o:
                 type: array
                 items:
                   type: string
-                  example: "150551000.0000000000"
+                  example: '150551000.0000000000'
               h:
                 type: array
                 items:
                   type: string
-                  example: "161869500.0000000000"
+                  example: '161869500.0000000000'
               l:
                 type: array
                 items:
                   type: string
-                  example: "150551000.0000000000"
+                  example: '150551000.0000000000'
               v:
                 type: array
                 items:
                   type: string
-                  example: "9.8592626506"
+                  example: '9.8592626506'
