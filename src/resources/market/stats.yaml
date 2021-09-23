@@ -1,8 +1,11 @@
 post:
-  summary:
-  operationId:
-  description:
   tags:
+  summary:
+  description:
+  externalDocs:
+    description: Find more info here
+    url: https://apidocs.nobitex.ir/#6ae2dae4a2
+  operationId:
   requestBody:
     content:
       application/json:
