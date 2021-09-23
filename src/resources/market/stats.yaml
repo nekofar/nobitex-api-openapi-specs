@@ -72,6 +72,8 @@ post:
                         dayClose:
                           type: string
                           example: "750350000.0000000000"
-    default:
-      $ref: "../../responses/UnexpectedError.yaml"
-
+              global:
+                type: object
+                properties:
+                  binance:
+                    type: object
