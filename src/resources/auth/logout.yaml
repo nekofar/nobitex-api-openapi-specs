@@ -1,0 +1,19 @@
+post:
+  summary: Authentication
+  operationId: authLogout
+  description: User logout
+  tags:
+    - authentication
+  responses:
+    "200":
+      content:
+        application/json:
+          schema:
+            type: object
+            properties:
+              detail:
+                type: string
+              message:
+                type: string
+    default:
+      $ref: "../../responses/UnexpectedError.yaml"
