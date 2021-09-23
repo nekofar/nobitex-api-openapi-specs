@@ -48,7 +48,7 @@ post:
               device:
                 type: string
                 example: 'AlRyansW'
-    '400':
+    400:
       description:
       content:
         application/json:
