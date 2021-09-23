@@ -16,7 +16,7 @@ servers:
   - url: "https://testnetapi.nobitex.ir"
 
 paths:
-  /auth/login:
+  /auth/login/:
     $ref: "./resources/auth/login.yaml"
   /auth/logout/:
     $ref: "./resources/auth/logout.yaml"
