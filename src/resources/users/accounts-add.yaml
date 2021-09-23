@@ -1,0 +1,30 @@
+post:
+  externalDocs:
+    url: 'https://apidocs.nobitex.ir/#0f4b9b52e8'
+  requestBody:
+    content:
+      application/json:
+        schema:
+          type: object
+          properties:
+            number:
+              type: string
+            shaba:
+              type: string
+            bank:
+              type: string
+          example: { "number": "5041721011111111","shaba": "IR111111111111111111111111","bank": "Resalat" }
+  responses:
+    200:
+      description: ''
+      content:
+        application/json:
+          schema:
+            type: object
+            properties:
+              status:
+                type: string
+                example: 'ok'
+  security:
+    - bearerAuth: [ ]
+
