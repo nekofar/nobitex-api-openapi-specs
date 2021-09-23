@@ -6,7 +6,6 @@ info:
   description: "Nobitex Exchange API"
   license:
     name: "MIT"
-    identifier: "MIT"
   contact:
     name: "API Support"
     url: "https://nobitex.ir"
@@ -72,12 +71,12 @@ paths:
   /users/referral/referral-status:
     $ref: "./resources/users/referral/referral-status.yaml"
   /users/referral/set-referrer:
-    $ref: "./resources/users/referral/set-referrer.yaml"  
-  
-  components:
-    parameters:
-      $ref: "./parameters/_index.yaml"
-    schemas:
-      $ref: "./schemas/_index.yaml"
-    responses:
-      $ref: "./responses/_index.yaml"
+    $ref: "./resources/users/referral/set-referrer.yaml"
+
+components:
+  parameters:
+    $ref: "./parameters/_index.yaml"
+  schemas:
+    $ref: "./schemas/_index.yaml"
+  responses:
+    $ref: "./responses/_index.yaml"
