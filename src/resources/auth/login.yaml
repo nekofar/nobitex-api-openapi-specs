@@ -57,6 +57,13 @@ post:
       content:
         application/json:
           schema:
-            $ref : "../../schemas/Error.yaml"
-    default:
-      $ref: "../../responses/UnexpectedError.yaml"
+            type: object
+            properties:
+              code:
+                type: string
+                example: 'MissingOTP'
+              non_field_errors:
+                type: array
+                items:
+                  type: string
+                  example: ['OTP not provided']
