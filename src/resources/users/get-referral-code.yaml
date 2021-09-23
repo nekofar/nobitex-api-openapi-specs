@@ -1,0 +1,43 @@
+post:
+  externalDocs:
+    url: 'https://apidocs.nobitex.ir/#0b7578b7fd'
+
+  requestBody:
+    content:
+      application/json:
+        schema:
+          type: object
+          properties:
+            friendShare:
+              type: integer
+              example: 5
+
+  responses:
+    200:
+      description: ''
+      content:
+        application/json:
+          schema:
+            type: object
+            properties:
+              status:
+                type: string
+                example: 'ok'
+              referralCode:
+                type: string
+                example: '895606'
+              referredUsersCount:
+                type: number
+                example: 0
+              referralFeeTotal:
+                type: number
+                example: 0
+              referralFeeTotalCount:
+                type: number
+                example: 0
+              hasReferrer:
+                type: boolean
+                example: 0
+
+  security:
+    - bearerAuth: [ ]
