@@ -45,3 +45,5 @@ get:
                       examples:
                         - "sell"
                         - "buy"
+    default:
+      $ref: "../../responses/UnexpectedError.yaml"
