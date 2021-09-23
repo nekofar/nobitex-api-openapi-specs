@@ -8,7 +8,7 @@ post:
     url: https://apidocs.nobitex.ir/#9bf73579b0
   operationId: authLogout
   responses:
-    "200":
+    '200':
       content:
         application/json:
           schema:
@@ -16,9 +16,18 @@ post:
             properties:
               detail:
                 type: string
+                example: 'Logout completed successfully.'
               message:
                 type: string
-    default:
-      $ref: "../../responses/UnexpectedError.yaml"
+                example: 'Logout completed successfully.'
+    '401':
+      content:
+        application/json:
+          schema:
+            type: object
+            properties:
+              detail:
+                type: string
+                example: 'Unauthorized tokens'
   security:
     - bearerAuth: [ ]
