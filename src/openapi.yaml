@@ -82,10 +82,11 @@ components:
     $ref: "./responses/_index.yaml"
   securitySchemes:
     basicAuth:
-      type: http
       description: Basic Authentication
+      type: http
       scheme: basic
     bearerAuth:
-      type: http
       description: Bearer Authentication
-      scheme: bearer
+      type: apiKey
+      name: Authorization
+      in: header
