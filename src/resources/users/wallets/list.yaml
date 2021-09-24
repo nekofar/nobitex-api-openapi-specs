@@ -16,32 +16,30 @@ post:
             properties:
               status:
                 type: string
+                example: 'ok'
               wallets:
                 type: array
                 items:
                   type: object
                   properties:
-                    type: object
-                    properties:
-                      activeBalance:
-                        type: string
-                      blockedBalance:
-                        type: string
-                      user:
-                        type: string
-                      currency:
-                        type: string
-                      id:
-                        type: number
-                      balance:
-                        type: string
-                      rialBalance:
-                        type: number
-                      rialBalanceSell:
-                        type: number
-                      depositAddress:
-                        type: object
-                        properties:
+                    activeBalance:
+                      type: string
+                    blockedBalance:
+                      type: string
+                    user:
+                      type: string
+                    currency:
+                      type: string
+                    id:
+                      type: number
+                    balance:
+                      type: string
+                    rialBalance:
+                      type: number
+                    rialBalanceSell:
+                      type: number
+                    depositAddress:
+                      type: object
                   example:
                     activeBalance: "10.2649975000"
                     blockedBalance: "0"
