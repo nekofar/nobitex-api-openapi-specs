@@ -16,7 +16,7 @@ post:
             - dstCurrency
           properties:
             hours:
-              type: float
+              type: number
             execution:
               type: string
             srcCurrency:
