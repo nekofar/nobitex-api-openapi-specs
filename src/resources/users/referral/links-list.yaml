@@ -1,6 +1,6 @@
 get:
   summary: Referral links list
-  
+
   operationId: usersReferalLinksList
 
   externalDocs:
@@ -33,8 +33,7 @@ get:
                     friendShare:
                       type: number
                     description:
-                      type: object
-                      properties:
+                      type: string
                     statsRegisters:
                       type: number
                     statsTrades:
