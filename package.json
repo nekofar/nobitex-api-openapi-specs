@@ -1,6 +1,5 @@
 {
   "name": "@nekofar/nobitex-api-openapi-specs",
-  "version": "1.0.0",
   "description": "This is an unofficial open specification based on the Nobitex documentation.",
   "scripts": {
     "build": "npx @redocly/openapi-cli bundle src/openapi.yaml --output build/openapi.yaml",
