@@ -1,0 +1,9 @@
+# This file instructs Redocly's linter to ignore the rules contained
+# for specific parts of your API.
+# See https://redoc.ly/docs/cli/ for more information.
+
+src/resources/auth/login.yaml:
+  no-path-trailing-slash: ['#/']
+
+src/resources/auth/logout.yaml:
+  no-path-trailing-slash: ['#/']
