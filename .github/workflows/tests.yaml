@@ -1,4 +1,4 @@
-name: Run Spectral on Pull Requests
+name: Tests
 
 on:
   - push
