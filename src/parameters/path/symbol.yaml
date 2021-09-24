@@ -1,0 +1,5 @@
+name: symbol
+in: path
+example: 'BTCIRT'
+description: Symbol
+required: true

@@ -7,11 +7,7 @@ get:
     url: https://apidocs.nobitex.ir/#3fe8d57657
 
   parameters:
-    - name: symbol
-      in: path
-      required: true
-      description: Symbol to get trades for
-      example: 'BTCIRT'
+    - $ref: '../../parameters/path/symbol.yaml'
 
   responses:
     200:
