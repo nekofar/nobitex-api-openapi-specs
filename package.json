@@ -1,0 +1,24 @@
+{
+  "name": "@nekofar/nobitex-api-openapi-specs",
+  "version": "1.0.0",
+  "description": "This is an unofficial open specification based on the Nobitex documentation.",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nekofar/nobitex-api-openapi-spec.git"
+  },
+  "keywords": [
+    "openapi",
+    "openapi-spec",
+    "swagger",
+    "nobitex"
+  ],
+  "author": "Milad Nekofar <milad@nekofar.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/nekofar/nobitex-api-openapi-spec/issues"
+  },
+  "homepage": "https://github.com/nekofar/nobitex-api-openapi-spec#readme"
+}
