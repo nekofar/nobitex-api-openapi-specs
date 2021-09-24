@@ -1,4 +1,8 @@
 get:
+  summary: Referral links list
+
+  operationId: usersReferalLinksList
+
   externalDocs:
     url: 'https://apidocs.nobitex.ir/#35df8fda78'
 
@@ -29,8 +33,7 @@ get:
                     friendShare:
                       type: number
                     description:
-                      type: object
-                      properties:
+                      type: string
                     statsRegisters:
                       type: number
                     statsTrades:

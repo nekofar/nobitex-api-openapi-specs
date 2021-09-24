@@ -1,6 +1,11 @@
 get:
+  summary: Login attempts
+
+  operationId: usersLoginAttempts
+
   externalDocs:
     url: 'https://apidocs.nobitex.ir/#e0478463ad'
+
   responses:
     200:
       description: ''

@@ -1,4 +1,8 @@
 post:
+  summary: Wallets (on demand)
+
+  operationId: wallets
+
   externalDocs:
     url: 'https://apidocs.nobitex.ir/#1ff004071d'
 
@@ -27,16 +31,15 @@ post:
                 additionalProperties:
                   type: object
                   properties:
-                    type: object
-                    properties:
-                      id:
-                        type: number
-                      balance:
-                        type: string
-                      blocked:
-                        type: string
+                    id:
+                      type: number
+                    balance:
+                      type: string
+                    blocked:
+                      type: string
                 example:
                   RLS: { "id": 133777, "balance": "0E-10", "blocked": "0" }
+                  BTC: { "id": 133778, "balance": "0E-10", "blocked": "0" }
 
   security:
     - bearerAuth: [ ]

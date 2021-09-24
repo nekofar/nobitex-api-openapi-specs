@@ -1,4 +1,8 @@
 post:
+  summary: Stats
+
+  operationId: marketStats
+
   externalDocs:
     url: https://apidocs.nobitex.ir/#6ae2dae4a2
 
@@ -22,7 +26,7 @@ post:
 
   responses:
     200:
-      description:
+      description: 'OK'
       content:
         application/json:
           schema:

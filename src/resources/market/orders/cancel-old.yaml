@@ -1,4 +1,8 @@
 post:
+  summary: Cancel order
+
+  operationId: marketOrdersCancel
+
   externalDocs:
     url: 'https://apidocs.nobitex.ir/#27f17a67f7'
 
@@ -12,7 +16,7 @@ post:
             - dstCurrency
           properties:
             hours:
-              type: float
+              type: number
             execution:
               type: string
             srcCurrency:

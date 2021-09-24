@@ -1,0 +1,2 @@
+symbol:
+  $ref: './query/symbol.yaml'

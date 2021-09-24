@@ -1,9 +1,13 @@
 get:
+  summary: Profile
+
+  operationId: usersProfile
+
   externalDocs:
-    description: ''
     url: 'https://apidocs.nobitex.ir/#88cb25e727'
+
   responses:
-    '200':
+    200:
       description: ''
       content:
         application/json:
@@ -191,5 +195,6 @@ get:
                 "monthTradesCount": 3
               }
             }
+
   security:
     - bearerAuth: [ ]

@@ -1,4 +1,8 @@
 post:
+  summary: Global stats
+
+  operationId: marketGlobalStats
+
   externalDocs:
     url: 'https://apidocs.nobitex.ir/#cdf265d0e6'
 

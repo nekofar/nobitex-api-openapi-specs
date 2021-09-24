@@ -1,4 +1,8 @@
 post:
+  summary: Accounts add
+
+  operationId: usersAccountsAdd
+
   externalDocs:
     url: 'https://apidocs.nobitex.ir/#0f4b9b52e8'
 

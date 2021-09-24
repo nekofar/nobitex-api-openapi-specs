@@ -1,4 +1,8 @@
 post:
+  summary: Balance
+
+  operationId: usersWalletsBalance
+
   externalDocs:
     url: 'https://apidocs.nobitex.ir/#55645b2c6d'
 

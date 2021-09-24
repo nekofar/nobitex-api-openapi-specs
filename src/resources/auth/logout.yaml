@@ -1,9 +1,14 @@
 post:
+  summary: Logout
+
+  operationId: authLogout
+
   externalDocs:
     url: 'https://apidocs.nobitex.ir/#9bf73579b0'
 
   responses:
     200:
+      description: 'OK'
       content:
         application/json:
           schema:
@@ -16,6 +21,7 @@ post:
                 type: string
                 example: 'Logout completed successfully.'
     401:
+      description: 'Unauthorized'
       content:
         application/json:
           schema:

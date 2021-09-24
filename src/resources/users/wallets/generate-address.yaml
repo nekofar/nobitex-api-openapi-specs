@@ -1,4 +1,8 @@
 post:
+  summary: Generate wallet address
+
+  operationId: usersWalletsGenerateAddress
+
   externalDocs:
     url: 'https://apidocs.nobitex.ir/#87af031464'
 

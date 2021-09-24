@@ -6,6 +6,7 @@ info:
   description: 'Nobitex Exchange API'
   license:
     name: 'MIT'
+    url: 'https://github.com/nekofar/nobitex-api-openapi-specs/blob/master/LICENSE'
   contact:
     name: 'API Support'
     url: 'https://nobitex.ir'

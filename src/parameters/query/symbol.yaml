@@ -1,0 +1,5 @@
+name: symbol
+in: query
+schema:
+  type: string
+  example: 'BTCIRT'

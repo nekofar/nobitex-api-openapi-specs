@@ -1,4 +1,8 @@
 get:
+  summary: Activate an emergency cancel
+
+  operationId: securityEmergencyCancelActivate
+
   externalDocs:
     url: 'https://apidocs.nobitex.ir/#01ab60950a'
 
