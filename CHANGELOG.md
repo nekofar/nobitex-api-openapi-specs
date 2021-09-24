@@ -1,6 +1,18 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
+## [1.0.1] - 2021-09-24
+
+### Documentation
+
+- Add the contributing file
+- Add link to the api docs to the readme
+
+### Miscellaneous Tasks
+
+- Add new script for test
+- Change version over main file to 1.0.1
+
 ## [1.0.0] - 2021-09-24
 
 ### Bug Fixes
