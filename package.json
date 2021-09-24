@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "description": "This is an unofficial open specification based on the Nobitex documentation.",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "npx @redocly/openapi-cli bundle src/openapi.yaml --output build/openapi.yaml",
+    "clean": "rm -r build",
+    "lint": "npx @redocly/openapi-cli lint src/openapi.yaml --format codeframe"
   },
   "repository": {
     "type": "git",
