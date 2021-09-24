@@ -5,14 +5,17 @@ on:
   - pull_request
 
 jobs:
-  build:
-    name: Run Spectral
+  lint:
+    name: Lint OpenAPI
     runs-on: ubuntu-latest
     steps:
-      # Check out the repository
-      - uses: actions/checkout@v2
+      - name: Checkout
+        uses: actions/checkout@v2
 
-      # Run Spectral
-      - uses: stoplightio/spectral-action@v0.8.0
+      - name: Setup Node
+        uses: actions/setup-node@v2
         with:
-          file_glob: 'src/openapi.yaml'
+          node-version: "16"
+
+      - name: Lint OpenAPI
+        run: npx @redocly/openapi-cli lint src/openapi.yaml
