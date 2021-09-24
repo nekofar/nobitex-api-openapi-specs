@@ -37,7 +37,7 @@ post:
 
   responses:
     200:
-      description:
+      description: 'OK'
       content:
         application/json:
           schema:
@@ -53,7 +53,7 @@ post:
                 type: string
                 example: 'AlRyansW'
     400:
-      description:
+      description: 'Bad Request'
       content:
         application/json:
           schema:

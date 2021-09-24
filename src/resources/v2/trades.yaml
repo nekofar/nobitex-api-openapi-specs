@@ -15,7 +15,7 @@ get:
 
   responses:
     200:
-      description:
+      description: 'OK'
       content:
         application/json:
           schema:
@@ -41,5 +41,5 @@ get:
                   - { "time": 1588689375067, "price": "1470000110", "volume": "0", "type": "sell" }
                   - { "time": 1588689360464, "price": "1470000110", "volume": "0.002", "type": "buy" }
     404:
-      description:
-        content: { }
+      description: 'Not Found'
+      content: { }

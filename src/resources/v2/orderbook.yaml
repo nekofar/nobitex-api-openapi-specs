@@ -15,7 +15,7 @@ get:
 
   responses:
     200:
-      description:
+      description: 'OK'
       content:
         application/json:
           schema:
@@ -40,5 +40,4 @@ get:
                 examples: [ [ "1470001120","0.126571" ],[ "1470000000","0.818994" ] ]
 
     404:
-      description:
-        content: { }
+      description: 'Not Found'
