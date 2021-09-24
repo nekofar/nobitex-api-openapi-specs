@@ -7,11 +7,7 @@ get:
     url: https://apidocs.nobitex.ir/#ohlc
 
   parameters:
-    - name: symbol
-      in: query
-      schema:
-        type: string
-        example: BTCIR
+    - $ref: '../../../parameters/query/symbol.yaml'
     - name: resolution
       in: query
       schema:
