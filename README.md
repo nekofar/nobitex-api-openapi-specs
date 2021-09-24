@@ -5,7 +5,7 @@
 
 # Nobitex Open API Specification
 
-> This is an unofficial open specification based on the `Nobitex` documentation.
+> This is an unofficial Open API specification for `Nobitex` based on the [API](https://apidocs.nobitex.ir) and [Postman](https://documenter.getpostman.com/view/5722122/Szmcayjw?version=latest) documentation.
 
 ## License
 
