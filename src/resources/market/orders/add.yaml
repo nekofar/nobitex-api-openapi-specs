@@ -15,15 +15,19 @@ post:
           properties:
             type:
               type: string
+              example: "buy"
             srcCurrency:
               type: string
+              example: "btc"
             dstCurrency:
               type: string
+              example: "usdt"
             amount:
-              type: string
+              type: number
+              example: 0.0623
             price:
               type: number
-          example: { "type": "buy","srcCurrency": "btc","dstCurrency": "rls","amount": "0.6","price": 520000000 }
+              example: 1210000000
 
   responses:
     200:
@@ -41,48 +45,46 @@ post:
                 properties:
                   type:
                     type: string
+                    example: "sell"
                   srcCurrency:
                     type: string
+                    example: "Bitcoin"
                   dstCurrency:
                     type: string
+                    example: "ریال"
                   price:
                     type: string
+                    example: "520000000"
                   amount:
                     type: string
+                    example: "0.6"
                   totalPrice:
                     type: string
+                    example: "312000000.0"
                   matchedAmount:
                     type: number
+                    example: 0
                   unmatchedAmount:
                     type: string
+                    example: "0.6"
                   id:
                     type: number
+                    example: 25
                   status:
                     type: string
+                    example: "Active"
                   partial:
                     type: boolean
+                    example: false
                   fee:
                     type: number
+                    example: 0
                   user:
                     type: string
+                    example: "name@example.com"
                   created_at:
                     type: string
-                example: {
-                  "type": "sell",
-                  "srcCurrency": "Bitcoin",
-                  "dstCurrency": "ریال",
-                  "price": "520000000",
-                  "amount": "0.6",
-                  "totalPrice": "312000000.0",
-                  "matchedAmount": 0,
-                  "unmatchedAmount": "0.6",
-                  "id": 25,
-                  "status": "Active",
-                  "partial": false,
-                  "fee": 0,
-                  "user": "name@example.com",
-                  "created_at": "2018-11-28T11:36:13.592827+00:00"
-                }
+                    example: "2018-11-28T11:36:13.592827+00:00"
 
   security:
     - bearerAuth: [ ]
