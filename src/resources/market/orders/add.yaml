@@ -16,6 +16,9 @@ post:
             type:
               type: string
               example: "buy"
+            execution:
+              type: string
+              example: "market"
             srcCurrency:
               type: string
               example: "btc"
