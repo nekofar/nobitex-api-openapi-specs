@@ -43,8 +43,14 @@ jobs:
     needs: changelog
     runs-on: ubuntu-latest
     steps:
+      - name: Build OpenAPI & Postman
+        run: npm run build
+
       - name: Create the GitHub release
         uses: softprops/action-gh-release@v1
         with:
+          files: |
+            build/openapi.yaml
+            build/postman.json
           body: ${{ needs.changelog.outputs.release_body }}
           prerelease: ${{ contains(github.ref, '-rc') || contains(github.ref, '-beta') || contains(github.ref, '-alpha') }}
