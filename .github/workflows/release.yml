@@ -43,6 +43,11 @@ jobs:
     needs: changelog
     runs-on: ubuntu-latest
     steps:
+      - name: Checkout
+        uses: actions/checkout@v2.4.0
+        with:
+          fetch-depth: 0
+
       - name: Build OpenAPI & Postman
         run: |
           npx @redocly/openapi-cli bundle src/openapi.yaml --output build/openapi.yaml
