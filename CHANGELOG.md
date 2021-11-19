@@ -1,6 +1,15 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
+## [1.0.3] - 2021-11-19
+
+### Miscellaneous Tasks
+
+- Bump actions/checkout from 2.3.5 to 2.4.0
+- Bump softprops/action-gh-release from 0.1.14 to 1
+- Add `openapi-to-postmanv2:2.12.0` package
+- Add new script for convert openapi spec to postman collection
+
 ## [1.0.2] - 2021-10-12
 
 ### Bug Fixes
