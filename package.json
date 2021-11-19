@@ -2,7 +2,9 @@
   "name": "@nekofar/nobitex-api-openapi-specs",
   "description": "This is an unofficial open specification based on the Nobitex documentation.",
   "scripts": {
-    "build": "npx @redocly/openapi-cli bundle src/openapi.yaml --output build/openapi.yaml",
+    "build": "npm run build:openapi && npm run build:postman",
+    "build:openapi": "npx @redocly/openapi-cli bundle src/openapi.yaml --output build/openapi.yaml",
+    "build:postman": "npx openapi-to-postmanv2 -s build/openapi.yaml -o build/postman.json",
     "clean": "rm -r build",
     "lint": "npx @redocly/openapi-cli lint src/openapi.yaml --format codeframe",
     "test": "npm run lint"
