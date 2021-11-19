@@ -44,7 +44,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Build OpenAPI & Postman
-        run: npm run build
+        run: |
+          npx @redocly/openapi-cli bundle src/openapi.yaml --output build/openapi.yaml
+          npx openapi-to-postmanv2 -s build/openapi.yaml -o build/postman.json
 
       - name: Create the GitHub release
         uses: softprops/action-gh-release@v1
