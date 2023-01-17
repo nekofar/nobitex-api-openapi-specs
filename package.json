@@ -27,6 +27,6 @@
   "homepage": "https://github.com/nekofar/nobitex-api-openapi-spec#readme",
   "devDependencies": {
     "@redocly/openapi-cli": "^1.0.0-beta.61",
-    "openapi-to-postmanv2": "^3.0.0"
+    "openapi-to-postmanv2": "^4.7.0"
   }
 }
