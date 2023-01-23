@@ -15,7 +15,7 @@ The MIT License (MIT). Please see [License File](LICENSE) for more information.
 [icon-twitter]: https://img.shields.io/badge/follow-%40nekofar-1DA1F2?logo=twitter&style=flat
 [icon-release]: https://img.shields.io/github/v/release/nekofar/nobitex-api-openapi-specs?include_prereleases
 [icon-license]: https://img.shields.io/github/license/nekofar/nobitex-api-openapi-specs.svg
-[icon-workflow]: https://img.shields.io/github/workflow/status/nekofar/nobitex-api-openapi-specs/Tests
+[icon-workflow]: https://img.shields.io/github/actions/workflow/status/nekofar/nobitex-api-openapi-specs/tests.yml?label=tests
 
 [link-twitter]: https://twitter.com/nekofar
 [link-release]: https://github.com/nekofar/nobitex-api-openapi-specs/releases
